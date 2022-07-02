@@ -50,6 +50,7 @@ main{
     margin: auto;
     text-align: center;
     font-size: 1.3rem;
+    color:white;
     background-color: transparent;
 }
 .icon{
@@ -127,6 +128,7 @@ input,
 label,
 button {
   font-family: "Mukta Mahee", Helvetica, Arial, sans-serif;
+  color: white;
 }
 .inputs{
     width: 80%;
@@ -161,7 +163,7 @@ button{
     font-size: 1.75rem;
     border-radius: 100vmax;
     margin: 2.5vh auto;
-    color:#211F2F;
+    color: #64CEAA;
 }
 .get-code{
     width: max-content;
