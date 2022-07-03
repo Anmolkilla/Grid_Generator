@@ -1,109 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Mukta+Mahee:300,700|Roboto+Mono|Caveat&display=swap"
-      rel="stylesheet"
-    />
-    <title>Css Button Generator</title>
-</head>
-<body>
-    <header>
-        <div class="right-corner"></div>
-    </header>
-    
-    <main class="main">
-        <div class="heading">
-            <h1><img src="grid.png" class="icon" alt="Grid Icon" />CSS Grid Generator</h1>
-        </div>
-        <div class="cont">
-            
-            <div class="column">
-                <input type="number" class="column-unit column-unit-1">
-                <input type="number" class="column-unit column-unit-2">
-                <input type="number" class="column-unit column-unit-3">
-                <input type="number" class="column-unit column-unit-4">
-                <input type="number" class="column-unit column-unit-5">
-            </div>
-        
-            <div class="row-and-grid">
-                
-                <div class="row">
-                    
-                    <input type="number" class="row-unit row-unit-1">
-                    <input type="number" class="row-unit row-unit-2">
-                    <input type="number" class="row-unit row-unit-3">
-                    <input type="number" class="row-unit row-unit-4">
-                    <input type="number" class="row-unit row-unit-5">
-                
-                </div>
-            <div class="grid">
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                <div class="units"></div>
-                
-            </div>
-            </div>
-                
-        </div>
-        <div class="inputs">
-            
-            <div class="row-input-and-label input-units">
-                <label for="row-input" class="row-label" >Row</label>
-                <input type="number" class="row-input">
-            </div>
-            
-            <div class="column-input-and-label input-units">
-                <label for="column-label" class="column-label">Column</label>
-                <input type="number" class="column-input">
-            </div>
-            
-            <div class="row-gap-label-and-input input-units ">
-                <label for="row-gap-label" class="row-gap-label">Row Gap <span class="grey">(in px)</span></label>
-                <input type="number" class="row-gap">
-            </div>
-            
-            <div class="column-gap-label-and-input input-units ">
-                <label for="column-gap-label" class="column-gap-label">Column Gap
-                <span class="grey">(in px)</span></label>
-                <input type="number" class="column-gap">
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="get-code">Please May I Have Some Code</button>
-            <button class="reset-grid">Reset Grid</button>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="left-bottom"></div>
-    </footer>
-</body>
-<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:300,700|Roboto+Mono|Caveat&display=swap" rel="stylesheet" />
+		<title>Css Button Generator</title>
+	</head>
+	<body>
+		<header>
+			<div class="top-right"></div>
+		</header>
+
+		<main class="main">
+			<div class="heading">
+				<h1><img src="grid.png" class="icon" alt="Grid Icon" />CSS Grid Generator</h1>
+			</div>
+			<div class="dir-row">
+				<div class="cont">
+					<div class="column"></div>
+
+					<div class="row-and-grid">
+						<div class="row"></div>
+						<div class="grid">
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+							<div class="units"></div>
+						</div>
+					</div>
+				</div>
+				<div class="inputs">
+					<div class="row-input-and-label input-units">
+						<label for="row-input" class="row-label" onchange=" start()">Row</label>
+						<input type="text" inputmode="numeric" class="row-input" onchange=" start()" />
+					</div>
+
+					<div class="column-input-and-label input-units">
+						<label for="column-label" class="column-label">Column</label>
+						<input type="text" inputmode="numeric" class="column-input" onchange=" start()" />
+					</div>
+
+					<div class="row-gap-label-and-input input-units">
+						<label for="row-gap-label" class="row-gap-label">Row Gap <span class="grey">(in px)</span></label>
+						<input type="text" inputmode="numeric" class="row-gap" onchange=" start()" />
+					</div>
+
+					<div class="column-gap-label-and-input input-units">
+						<label for="column-gap-label" class="column-gap-label">Column Gap <span class="grey">(in px)</span></label>
+						<input type="text" inputmode="numeric" class="column-gap" onchange=" start()" />
+					</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="get-code">Please May I Have Some Code</button>
+				<button class="reset-grid">Reset Grid</button>
+			</div>
+		</main>
+
+		<dialog class="modal fade-out">
+			<div class="btns">
+				<button class="copy"><img src="copy.png" alt="Copy" /> Copy To Clipboard</button>
+				<button class="close"><img src="close.png" alt="Close" /> Close</button>
+			</div>
+			<div class="code-wrapper">
+				<p class="display">
+					<span class="green">display<span class="white">:</span><span class="skin"> grid</span><span class="white">;</span></span>
+				</p>
+				<p class="template-col">
+					<span class="green"
+						>grid-template-columns<span class="white">:</span><span class="skin"> repeat(<span class="col-var"></span>,1fr)</span><span class="white">;</span></span
+					>
+				</p>
+				<p class="template-row">
+					<span class="green"
+						>grid-template-rows<span class="white">:</span><span class="skin"> repeat(<span class="row-var"></span>,1fr)</span><span class="white">;</span></span
+					>
+				</p>
+				<p class="col-gap">
+					<span class="green"
+						>grid-column-gap<span class="white">:</span><span class="skin"> <span class="col-gap-var"></span>px</span><span class="white">;</span></span
+					>
+				</p>
+				<p class="row-gap">
+					<span class="green"
+						>grid-row-gap<span class="white">:</span><span class="skin"> <span class="row-gap-var"></span>px</span><span class="white">;</span></span
+					>
+				</p>
+			</div>
+		</dialog>
+		<footer>
+			<div class="left-bottom"></div>
+		</footer>
+	</body>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
 </html>
