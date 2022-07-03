@@ -123,12 +123,18 @@ input{
     aspect-ratio: 2;
     background-color: #211F2F;
     border: 1px solid #666666;
+    text-align: center;
+}
+input:focus{
+    border: 1px solid #666666;
+    outline: none;
 }
 input,
 label,
 button {
   font-family: "Mukta Mahee", Helvetica, Arial, sans-serif;
   color: white;
+  font-size: 1.5rem;
 }
 .inputs{
     width: 80%;
@@ -164,6 +170,7 @@ button{
     border-radius: 100vmax;
     margin: 2.5vh auto;
     color: #64CEAA;
+    font-weight: 500;
 }
 .get-code{
     width: max-content;
